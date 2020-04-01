@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1137936-9efb-493b-b102-bb773dc5dfbf" name="Default Changelist" comment="" />
+    <list default="true" id="b1137936-9efb-493b-b102-bb773dc5dfbf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraisnew.php" beforeDir="false" afterPath="$PROJECT_DIR$/fraisnew.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recap.php" beforeDir="false" afterPath="$PROJECT_DIR$/recap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script_BDD_3.php" beforeDir="false" afterPath="$PROJECT_DIR$/script_BDD_3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/searchfrais.php" beforeDir="false" afterPath="$PROJECT_DIR$/searchfrais.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +26,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1UQBTWQjzN09D6r1h8VHFxT4nZ0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,6 +38,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
@@ -112,7 +124,7 @@
       <workItem from="1585683508338" duration="1402000" />
       <workItem from="1585690656906" duration="1299000" />
       <workItem from="1585745592778" duration="3138000" />
-      <workItem from="1585760893324" duration="6345000" />
+      <workItem from="1585760893324" duration="8608000" />
     </task>
     <servers />
   </component>

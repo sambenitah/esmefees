@@ -9,6 +9,32 @@ $mois = $_SESSION['mois'];
 
 
    try {
+
+       $fichefrais = $bdd->prepare("SELECT montant FROM fraisforfait WHERE id = ?");
+       $fichefrais->execute(array("ETP".$mois));
+       $resultfichefrais = $fichefrais->rowCount();
+
+       if($resultfichefrais == 1){
+
+           $stmt = $bdd->prepare("UPDATE fraisforfait set montant = ? where id = ?");
+
+           $stmt->execute(array($etapes,"ETP".$mois));
+
+           $stmt = $bdd->prepare("UPDATE fraisforfait set montant = ? where id = ?");
+
+           $stmt->execute(array($km,"KM".$mois));
+
+           $stmt = $bdd->prepare("UPDATE fraisforfait set montant = ? where id = ?");
+
+           $stmt->execute(array($nuitees,"NUI".$mois));
+
+           $stmt = $bdd->prepare("UPDATE fraisforfait set montant = ? where id = ?");
+
+           $stmt->execute(array($repas,"REP".$mois));
+       }
+
+
+
        $stmt = $bdd->prepare("INSERT INTO fraisforfait (id, libelle,montant) VALUES (?, ?, ?)");
 
        $stmt->execute(array("ETP".$mois, "Etapes",$etapes));

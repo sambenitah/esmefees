@@ -1,8 +1,5 @@
 <?php
 require_once("header.php");
-echo "<pre>";
-var_dump($_SESSION['resultfrais']);
-echo "</pre>";
 ?>
 
     <center>
@@ -44,21 +41,21 @@ echo "</pre>";
                             <div class="form-group row">
                                 <div class="col-sm-6">
                                     <input type="number" class="form-control form-control-user" id="repas" name="repas"
-                                           placeholder="Repas" value="">
+                                           placeholder="Repas" value="<?php  if(!empty($_SESSION['resultfrais'])) echo $_SESSION['resultfrais'][0]["montant"]; ?>">
                                 </div>
                                 <div class="col-sm-6">
                                     <input type="number" class="form-control form-control-user" id="nuitees"
-                                           name="nuitees" placeholder="Nuitées">
+                                           name="nuitees" placeholder="Nuitées" value="<?php  if(!empty($_SESSION['resultfrais'])) echo $_SESSION['resultfrais'][1]['montant']; ?>">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-6">
                                     <input type="number" class="form-control form-control-user" id="km" name="km"
-                                           placeholder="KM">
+                                           placeholder="KM" value="<?php  if(!empty($_SESSION['resultfrais'])) echo $_SESSION['resultfrais'][2]['montant']; ?>">
                                 </div>
                                 <div class="col-sm-6">
                                     <input type="number" class="form-control form-control-user" id="etapes"
-                                           name="etapes" placeholder="Etapes">
+                                           name="etapes" placeholder="Etapes" value="<?php  if(!empty($_SESSION['resultfrais'])) echo $_SESSION['resultfrais'][3]['montant']; ?>">
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary btn-user btn-block" <?php if(!empty($_SESSION['errorfiche']) || empty($_SESSION['mois'])) echo "disabled"; $_SESSION['errorfiche'] = null;?>>Submit</button>

@@ -34,16 +34,18 @@
                 $fichefraisrep->execute(array("REP".$mois));
                 $resultfichefraisrep = $fichefraisrep->fetch(PDO::FETCH_ASSOC);
 
-                $_SESSION['resultfrais'] = array($resultfichefraisetp,$resultfichefraiskm,$resultfichefraisnui,$resultfichefraisrep);
+                $_SESSION['resultfrais'] = array($resultfichefraisrep,$resultfichefraisnui,$resultfichefraiskm,$resultfichefraisetp);
                 header("Location: fraisnew.php");
 
             }
             else{
+                $_SESSION['resultfrais'] = null;
                 header("Location: fraisnew.php");
             }
 
 
         } else {
+            $_SESSION['resultfrais'] = null;
             $_SESSION['errorfiche'] = "Il n'y a aucune fiche de frais qui existe pour ce mois veuillez en créer une";
             header("Location: fraisnew.php");
         }
