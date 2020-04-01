@@ -41,21 +41,21 @@ require_once("header.php");
                             <div class="form-group row">
                                 <div class="col-sm-6">
                                     <input type="number" class="form-control form-control-user" id="repas" name="repas"
-                                           placeholder="Repas" value="<?php  if(!empty($_SESSION['resultfrais'])) echo $_SESSION['resultfrais'][0]["montant"]; ?>">
+                                           placeholder="Repas" value="<?php  if(!empty($_SESSION['resultfrais'])) echo $_SESSION['resultfrais'][0]["montant"]/25; ?>">
                                 </div>
                                 <div class="col-sm-6">
                                     <input type="number" class="form-control form-control-user" id="nuitees"
-                                           name="nuitees" placeholder="Nuitées" value="<?php  if(!empty($_SESSION['resultfrais'])) echo $_SESSION['resultfrais'][1]['montant']; ?>">
+                                           name="nuitees" placeholder="Nuitées" value="<?php  if(!empty($_SESSION['resultfrais'])) echo $_SESSION['resultfrais'][1]['montant']/80; ?>">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-6">
                                     <input type="number" class="form-control form-control-user" id="km" name="km"
-                                           placeholder="KM" value="<?php  if(!empty($_SESSION['resultfrais'])) echo $_SESSION['resultfrais'][2]['montant']; ?>">
+                                           placeholder="KM" value="<?php  if(!empty($_SESSION['resultfrais'])) echo $_SESSION['resultfrais'][2]['montant']/0.62; ?>">
                                 </div>
                                 <div class="col-sm-6">
                                     <input type="number" class="form-control form-control-user" id="etapes"
-                                           name="etapes" placeholder="Etapes" value="<?php  if(!empty($_SESSION['resultfrais'])) echo $_SESSION['resultfrais'][3]['montant']; ?>">
+                                           name="etapes" placeholder="Etapes" value="<?php  if(!empty($_SESSION['resultfrais'])) echo $_SESSION['resultfrais'][3]['montant']/110; ?>">
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary btn-user btn-block" <?php if(!empty($_SESSION['errorfiche']) || empty($_SESSION['mois'])) echo "disabled"; $_SESSION['errorfiche'] = null;?>>Submit</button>
